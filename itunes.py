@@ -9,7 +9,7 @@ response = requests.get("https://itunes.apple.com/search?entity=song&limit=10&te
 #print(response.json())
 #print(json.dumps(response.json(), indent = 5))
 
-ob = response.json()
+#ob = response.json()
 
-for result in ob["results"]:
-    print(result["trackName"])
+#for result in ob["results"]:
+#    print(result["trackName"])
