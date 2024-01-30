@@ -15,8 +15,8 @@ with open("../File IO/students.csv") as file:
 #    print(student)
 #print(students)
 
-def get_name(student):
-    return student["name"]
+#def get_name(student):
+#    return student["name"]
 
-for student in sorted(students, key = get_name):
+for student in sorted(students, key = lambda student: student["name"]):
     print(f"{student['name']} is in {student['address']}.")
